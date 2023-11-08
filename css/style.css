@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: beige;
+   
+}
+
+
+.logo {
+   flex: 1;
+}
+
+.mobil-ikon {
+   width: 40px;
+   height: 40px;
+}
+
+header nav ul {
+   display: none;
+   gap: 0.5rem;
+   list-style: none;
+}
+
+#logo {
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 600;
+   color: #000;
+}
+
+
+.categories {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.categories article {
+   flex:110;
+}
+
+footer {
+   display: grid;
+   text-align: center;
+   padding: 3px;
+   background-color: beige;
+   color: white;
+}
+
+form {
+   border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password]{
+   width: 100%;
+   padding:12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+.imgvalgfriside {
+   text-align: center;
+   margin: 12px 5px;
+}
+
+img.logo {
+   width: 40%;
+   border-radius: 50%;
+}
+
+.valgfriside {
+   padding: 16px;
+}
+
+.picture {
+   width: 100%;
+}
+
+.categories {
+   display:flex;
+   flex-direction: column;
+}
+
+.produkt-container {
+   display:grid;
+   grid-template-columns: 1fr;
+}
+
+
+   footer {
+       text-align: center;
+       padding: 3px;
+       background-color: DarkSalmon;
+       color: white;
+     }
+
+
+/* .default-flex article img { */
+   /* width: 100%; */
+
+  /* .left-section {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+   
+   }
+
+   */
+
+
+@media only screen and (min-width: 850px) {
+   .mobil-ikon {
+       display: none;
+   }
+
+   header nav ul {
+       display: flex;
+       gap: 0.5rem;
+       list-style: none;
+   }
+
+   #grid-container {
+       grid-template-areas: "header main footer";
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(4, auto);
+   }
+
+   .categories {
+       flex-direction: row;
+       flex-wrap: nowrap;
+   }
+   
+   .produkt-container {
+       grid-template-columns: 1fr 1fr;
+   }
+}
