@@ -24,10 +24,11 @@
                     <li><a href="index.html" class="w3-bar-item w3-button">Hjem</a></li>
                     <li><a href="produkt.html" class="w3-bar-item w3-button">Produkter</a></li>
                     <li><a href="valgfriside.html" class="w3-bar-item w3-button">Levering</a></li>
+                    <li><a href="analyse.html" class="w3-bar-item w3-button">Analyse</a></li>
                     
                     
                 </ul>
-                <img class="mobil-ikon" src="img/hamburger.svg">
+                <img class="mobil-ikon" src="img/hamburger.svg" alt="meny">
             </nav>
 
          
@@ -37,33 +38,38 @@
 
         <main>
 
-
-            <h1> Logg deg på</h1>
-
-            <div class="valgfriside">
+            <article class="valgfriside">
+                <h1> Logg deg på</h1>
                 <img class="picture" src="img/shoelogo.jpg" alt="shoelogo">
                 <form method="post">
                     <label for="navn"><b>Brukernavn</b></label>
-                    <input type="text" placeholder="navn" required>
+                    <input type="text" id="navn" placeholder="navn" required>
                     <label for="password"><b>Passord</b></label>
-                    <input type="password" placeholder="" required>
+                    <input type="password" id="password" placeholder="" required>
                     <input type="submit" value="Logg inn">
 
                 </form>
                 
-            </div>
+            </article>
 
         </main>
         
     </div>
 
-        <footer>
-            <p>Kontakt informasjon<br>
-    
-                <a href="footspector:ukjent@eksempel.com">kontakt oss pr mail på :ukjent@eksempel.com</a>
-                <a href="footspector:ukjent@eksempel.com">kontakt oss på tlf : 004768897600</a>
-                <a href="footspector:ukjent@eksempel.com">finn oss på sosiale medier</a>
-            </p>
-        </footer> 
+    <footer>
+        <article>
+            <p>Kontakt informasjon</p> <br>
+
+            <ul>
+
+                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss pr mail på :ukjent@eksempel.com</a></li>
+                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss på tlf : 004768897600</a></li>
+                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">finn oss på sosiale medier</a></li>
+
+            </ul>
+
+        </article>
+    </footer>
+
 </body>
 </html> 

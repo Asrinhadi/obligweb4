@@ -51,8 +51,12 @@ footer {
    display: grid;
    text-align: center;
    padding: 3px;
-   background-color: beige;
-   color: white;
+   background-color: rgb(179, 179, 153);
+   color: #000;
+}
+
+footer p {
+   color: #000000;
 }
 
 form {
@@ -79,10 +83,13 @@ img.logo {
 }
 
 .valgfriside {
+   max-width: 900px;
+   margin: auto;
    padding: 16px;
 }
 
 .picture {
+
    width: 100%;
 }
 
@@ -105,34 +112,25 @@ td {
    }
 
 img {
-       max-width: 100%;
+      max-width: 300;
    }
 
 p {
-       margin: 3px 0; /* Redusert margin for mindre skjermer */
+       margin: 3px 0; 
    }
 
 
 footer {
        text-align: center;
        padding: 3px;
-       background-color: DarkSalmon;
+       background-color: beige;
        color: white;
      }
 
-
-/* .default-flex article img { */
-   /* width: 100%; */
-
-  /* .left-section {
-       display: flex;
-       align-items: center;
-       gap: 10px;
-   
-   }
-
-   */
-
+.text-footer {
+   padding: 5%;
+   color: rgb(8, 7, 7);
+}
 
 @media only screen and (min-width: 850px) {
    .mobil-ikon {
