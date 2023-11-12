@@ -38,25 +38,32 @@
         </header>
 
         
-        <main class="produkt-container">
+        <main itemscope itemtype="https://schema.org/Product">
+           
+            <article class="produkt-container">
             
-            
-            <article>
-            
-                <img class="picture" src="img/produkt.jpg" alt="produktbilde">
+                <img itemprop="image" class="picture" src="img/produkt.jpg" alt="produktbilde">
             </article>
-            <article>
-                <h1>Nike allround</h1>
-                <p>Produktinformasjon:</p>
-            
-                <ul>
-                    
-                    <li>Nike allround</li>
-                    <li>Pris:120 kr</li>
-                    <li>Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige
+            <article> 
+                <h1 itemprop="brand">Nike allround</h1>
+                <p itemprop="description">Produktinformasjon:</p>
+                
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <ul>
+                        <li itemprop="name">Nike allround</li>
+                        <li>Pris:120 kr</li>
+                        <li itemprop="description">Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige
                         sko som kan brukes både til hverdagen og til treningen </li>
-    
-                </ul>
+        
+                    </ul>
+                </div>
+                <div>
+                <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                    <meta itemprop="name" content="Fred Benson" />
+                </div>
+                </div>
+
 
             </article>
 
