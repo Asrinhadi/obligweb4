@@ -129,9 +129,8 @@ form {
 
 /*tabellen er fra en medstudent*/
 
-.table-row{
-  width: 100%;
-}
+
+
 .table-container {
   width: 100%;
   overflow-x: auto; /* Horisontal scrollbar når skjermen blir for liten */
