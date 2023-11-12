@@ -1,89 +1,80 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+
     <!--start av metadata-->
     <meta charset="UTF-8">
     <meta name="description" content="gode og behagelige sko til både hverdagen og til trening">
-    <meta name="keywords" content="sko Nike trening ">
-    <meta name="Asrin Hadi" content="John Doe">
+    <meta name="keywords" content="sko, Nike, trening">
+    <meta name="author" content="Asrin Hadi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--slutt-->
-    
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta property="og:title" content="trenger du gode Nike sko">
+    <meta property="og:url" content="https://schema.org/AggregateRating">
+    <meta property="og:description" content="Nike allround gode og behagelige">
 
-    <title>Footspector</title>
+    <rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Footspector - Nike allround</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Footspector</title>        
 </head>
 <body>
-
-
+    
     <div id="grid-container">
 
-        <header>
-            
-            <a href="produkt.html" id="logo">Footspecter</a>
-
-            <nav>
-
-                <ul>
-                    <li><a href="index.html" class="w3-bar-item w3-button">Hjem</a></li>
-                    <li><a href="produkt.html" class="w3-bar-item w3-button">Produkter</a></li>
-                    <li><a href="valgfriside.html" class="w3-bar-item w3-button">Logginn</a></li>
-                    <li><a href="analyse.html" class="w3-bar-item w3-button">Analyse</a></li>
-                    
-                    
-                </ul>
+    <header>
+        <a href="produkt.html" id="logo">Footspecter</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="w3-bar-item w3-button">Hjem</a></li>
+                <li><a href="produkt.html" class="w3-bar-item w3-button">Produkter</a></li>
+                <li><a href="valgfriside.html" class="w3-bar-item w3-button">Logginn</a></li>
+                <li><a href="analyse.html" class="w3-bar-item w3-button">Analyse</a></li>
+            </ul>
                 <img class="mobil-ikon" src="img/hamburger.svg" alt="meny">
-            </nav>
-
-        </header>
-
-        
-        <main itemscope itemtype="https://schema.org/Product">
-           
-            <article class="produkt-container">
-            
-                <img itemprop="image" class="picture" src="img/produkt.jpg" alt="produktbilde">
-            </article>
-            <article> 
-                <h1 itemprop="brand">Nike allround</h1>
-                <p itemprop="description">Produktinformasjon:</p>
+        </nav>
+    </header>
                 
-                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                    <ul>
-                        <li itemprop="name">Nike allround</li>
-                        <li>Pris:120 kr</li>
-                        <li itemprop="description">Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige
-                        sko som kan brukes både til hverdagen og til treningen </li>
+            <main itemscope itemtype="https://schema.org/Product">
+                <article class="produkt-container">
+                    <img itemprop="image" class="picture" src="img/produkt.jpg" alt="produktbilde">
+                </article>
+                    
+                <article> 
+                    <h1 itemprop="name">Nike allround</h1>
+                    <p itemprop="description">Produktinformasjon:</p>
+                    <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+                        <meta itemprop="name" content="Nike" />
+                    </div>
         
-                    </ul>
-                </div>
-                <div>
-                <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
-                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
-                    <meta itemprop="name" content="Fred Benson" />
-                </div>
-                </div>
-
-
-            </article>
-
-
-        </main>
-    </div> 
-
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <ul>
+                            <li itemprop="name">Nike allround</li>
+                            <li itemprop="gtin13">1234567891234</li> 
+                            <li itemprop="price">550.00kr</li>
+                            <li itemprop="description">Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige sko som kan brukes både til hverdagen og til treningen </li>
+                        </ul>
+                    </div>
+        
+                    <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                        <meta itemprop="name" content="Fred Benson" />
+                    </div>
+                    </div>
+                    </article>
+                </main>
+            </div>
     <footer>
         <article>
             <p>Kontakt informasjon</p> <br>
-
             <ul>
-
                 <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss via epost</a></li>
                 <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss på tlf</a></li>
                 <li><a class="text-footer" href="footspector:ukjent@eksempel.com">finn oss på sosiale medier</a></li>
-
             </ul>
         </article>
     </footer>
-   
-</body>
+
+</body>        
 </html>
+        
