@@ -1,120 +1,75 @@
 <!DOCTYPE html>
-<html lang="nb" itemscope itemtype="http://schema.org/WebPage">
+<html lang="no">
 <head>
     <!--start av metadata-->
     <meta charset="UTF-8">
-    <meta name="description" content="gode og behagelige Nike sko til både hverdagen og til trening">
-    <meta name="keywords" content="sko Nike trening ">
-    <meta name="Asrin Hadi" content="John Doe">
+    <meta name="description" content="gode og behagelige sko til både hverdagen og til trening">
+    <meta name="keywords" content="sko, Nike, trening">
+    <meta name="author" content="Asrin Hadi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--slutt-->
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <!--metadata eller twitter starter her -->
-    <meta property="og:title" content="trenger du gode Nike sko">
-    <meta property="og:url" content="https://schema.org/AggregateRating">
-    <meta property="og:description" content="Nike allround gode og behagelige">
-   
-    <rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Footspector - Nike allround</title>
+    <title>Footspector</title>
 </head>
 <body>
-
-
     <div id="grid-container">
-
         <header>
-            
             <a href="produkt.html" id="logo">Footspecter</a>
-
             <nav>
-
                 <ul>
                     <li><a href="index.html" class="w3-bar-item w3-button">Hjem</a></li>
                     <li><a href="produkt.html" class="w3-bar-item w3-button">Produkter</a></li>
                     <li><a href="valgfriside.html" class="w3-bar-item w3-button">Logginn</a></li>
                     <li><a href="analyse.html" class="w3-bar-item w3-button">Analyse</a></li>
-                    
-                    
                 </ul>
                 <img class="mobil-ikon" src="img/hamburger.svg" alt="meny">
             </nav>
-
         </header>
-        <main class="produkt-container" itemscope itemtype="https://schema.org/Product">
-
-            <article>
-                <img class="picture" src="img/produkt.jpg" alt="produktbilde" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        
+        <main itemscope itemtype="https://schema.org/Product">
+            <article class="produkt-container">
+                <img itemprop="image" class="picture" src="img/produkt.jpg" alt="produktbilde">
             </article>
-            <div class="hidden_mobile" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org/MerchantReturnPolicy">
-            <div itemprop="returnShippingFeesAmount" itemscope itemtype="https://schema.org/MonetaryAmount">                      <meta itemprop="currency" content="NOK">
-            <meta itemprop="value" content="0">
-            </div>
-                <meta itemprop="returnMethod" content="ReturnByMail">
-                <meta itemprop="applicableCountry" content="NO">
-                <meta itemprop="applicableCountry" content="SE">
-                <meta itemprop="applicableCountry" content="DK">
-                <meta itemprop="applicableCountry" content="IS">
-                <meta itemprop="applicableCountry" content="FI">
-                <meta itemprop="merchantReturnDays" content="30">
-                <meta itemprop="merchantReturnLink" content="https://itstud.hiof.no/~mariuror/returside.html">
-                <meta itemprop="refundType" content="fullRefund">
-                <meta itemprop="returnPolicyCountry" content="NO">
-                <meta itemprop="returnPolicyCategory" content="MerchantReturnFiniteReturnWindow">
-            </div>
-                    
-            <div itemprop="shippingRate" itemscope itemtype="https://schema.org/MonetaryAmount">
-                <meta itemprop="currency" content="NOK">
-                <meta itemprop="value" content="39">
-            </div>
-            <div itemprop="shippingDestination" itemscope itemtype="https://schema.org/DefinedRegion">
-                <meta itemprop="addressCountry" content="NO">
-                <meta itemprop="shippingOrigin" content="NO">
-            </div>
-            </div>
-            
-            <article>
-
-                <h1> <h1 itemprop="name">
-                    Nike joggesko
-                </h1>
-                <p itemprop="description"> Produktinformasjon </p>
-                    <ul>
-                        <li>Nike allround</li>
-                    </ul>
-                <div>    
-                    <meta itemprop="availability" content="InStock"> 
-                    <meta itemprop="priceCurrency" content="NOK">
-                    <span itemprop="price" content="550.00"> Pris 550 kr</span>
-                <div itemprop="shippingDetails" itemscope itemtype="https://schema.org/OfferShippingDetails">
-                <div itemprop="deliveryTime" itemscope itemtype="https://schema.org/ShippingDeliveryTime">
-                    <meta itemprop="handlingTime" content="P2D">
-                    <meta itemprop="transitTime" content="P6D">
+            <article> 
+                <h1 itemprop="name">Nike allround</h1>
+                <p itemprop="description">Produktinformasjon:</p>
+                
+                <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+                    <meta itemprop="name" content="Nike" />
                 </div>
 
-                <p>Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige
-                    sko som kan brukes både til hverdagen og til treningen </li>
-                    
-                </p>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <ul>
+                        <li itemprop="name">Nike allround</li>
+                        <li itemprop="gtin13">1234567890123</li> 
+                        <li itemprop="price" content="120.00">
+                            <meta itemprop="priceCurrency" content="NOK" />
+                            120 kr
+                        </li>
+                        <li itemprop="description">Nike fra 2012 er tilbake, denne gangen med en fresh vri. Veldig gode og behagelige sko som kan brukes både til hverdagen og til treningen </li>
+                    </ul>
+                </div>
+
+                <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                        <meta itemprop="name" content="Fred Benson" />
+                    </div>
+                </div>
             </article>
         </main>
+    </div> 
+
     <footer>
         <article>
-
-
             <p>Kontakt informasjon</p> <br>
             <ul>
-
-                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss via epost</a></li>
-                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">kontakt oss på tlf</a></li>
-                <li><a class="text-footer" href="footspector:ukjent@eksempel.com">finn oss på sosiale medier</a></li>
+                <li><a class="text-footer" href="mailto:ukjent@eksempel.com">kontakt oss via epost</a></li>
+                <li><a class="text-footer" href="tel:+123456789">kontakt oss på tlf</a></li>
+                <li><a class="text-footer" href="https://www.example.com" target="_blank">finn oss på sosiale medier</a></li>
             </ul>
         </article>
     </footer>
-   
 </body>
 </html>
-
-
-
-
