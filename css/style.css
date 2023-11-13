@@ -20,6 +20,12 @@ header {
   
 }
 
+.table-text{
+  font-size: 3rem;
+  th{
+    font-size: 3rem;
+  }
+}
 
 .logo {
   flex: 1;
